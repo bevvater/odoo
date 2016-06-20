@@ -2,7 +2,7 @@
 
 from openerp import models, fields, api
 class Course(models.Model):
-    _name = 'openacademy.course'
+    _name = 'test.course'
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()

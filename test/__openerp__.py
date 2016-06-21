@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "test",
+    'name': "test module",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -10,8 +10,8 @@
         Long description of module's purpose
     """,
 
-    'author': "Water",
-    'website': "http://www.yourcompany.com",
+    'author': "Khoa Vu",
+    'website': "http://www.water.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml

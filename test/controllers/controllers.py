@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 from openerp import http
 
-# class Test(http.Controller):
-#     @http.route('/test/test/', auth='public')
+# class Openacademy(http.Controller):
+#     @http.route('/openacademy/openacademy/', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/test/test/objects/', auth='public')
+#     @http.route('/openacademy/openacademy/objects/', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('test.listing', {
-#             'root': '/test/test',
-#             'objects': http.request.env['test.test'].search([]),
+#         return http.request.render('openacademy.listing', {
+#             'root': '/openacademy/openacademy',
+#             'objects': http.request.env['openacademy.openacademy'].search([]),
 #         })
 
-#     @http.route('/test/test/objects/<model("test.test"):obj>/', auth='public')
+#     @http.route('/openacademy/openacademy/objects/<model("openacademy.openacademy"):obj>/', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('test.object', {
+#         return http.request.render('openacademy.object', {
 #             'object': obj
 #         })

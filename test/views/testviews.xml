@@ -1,68 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <openerp>
     <data>
 
-    	 <record model="ir.ui.view" id="course_form_view">
-            <field name="name">course.form</field>
-            <field name="model">test.course</field>
-            <field name="arch" type="xml">
-                <form string="Course Form">
-                    <sheet>
-                        <group>
-                            <field name="name"/>
-                            <field name="responsible_id"/>
-                        </group>
-                        <notebook>
-                            <page string="Description">
-                                <field name="description"/>
-                            </page>
-                            <page string="Sessions">
-                                <field name="session_ids">
-                                    <tree string="Registered sessions">
-                                        <field name="name"/>
-                                        <field name="instructor_id"/>
-                                    </tree>
-                                </field>
-                            </page>
-                        </notebook>
-                    </sheet>
-                </form>
-            </field>
-        </record>
 
-        <record model="ir.ui.view" id="course_search_view">
-            <field name="name">course.search</field>
-            <field name="model">test.course</field>
-            <field name="arch" type="xml">
-                <search>
-                    <field name="name"/>
-                    <field name="description"/>
-                </search>
-            </field>
-        </record>
-
-
-        <!-- override the automatically generated list view for courses -->
-        <record model="ir.ui.view" id="course_tree_view">
-            <field name="name">course.tree</field>
-            <field name="model">test.course</field>
-            <field name="arch" type="xml">
-                <tree string="Course Tree">
-                    <field name="name"/>
-                    <field name="responsible_id"/>
-                </tree>
-            </field>
-        </record>
-
-
-    	        <!-- window action -->
+        <!-- window action -->
         <!--
             The following tag is an action definition for a "window action",
             that is an action opening a view or a set of views
         -->
         <record model="ir.actions.act_window" id="course_list_action">
             <field name="name">Courses</field>
-            <field name="res_model">test.course</field>
+            <field name="res_model">test</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -71,12 +19,11 @@
             </field>
         </record>
 
-
         <!-- top level menu: no parent -->
-        <menuitem id="main_openacademy_menu" name="Test2 Academy"/>
+        <menuitem id="main_openacademy_menu" name="Test1 Academy"/>
         <!-- A first level in the left side menu is needed
              before using action= attribute -->
-        <menuitem id="openacademy_menu" name="Test Academy"
+        <menuitem id="openacademy_menu" name="Test2 Academy"
                   parent="main_openacademy_menu"/>
         <!-- the following menuitem should appear *after*
              its parent openacademy_menu and *after* its
@@ -86,6 +33,7 @@
         <!-- Full id location:
              action="openacademy.course_list_action"
              It is not required when it is the same module -->
+
 
     </data>
 </openerp>

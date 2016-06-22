@@ -4,7 +4,7 @@
 
         <record model="ir.ui.view" id="course_form_view">
             <field name="name">course.form</field>
-            <field name="model">abc.course</field>
+            <field name="model">abc</field>
             <field name="arch" type="xml">
                 <form string="Course Form">
                     <sheet>
@@ -32,7 +32,7 @@
 
         <record model="ir.ui.view" id="course_search_view">
             <field name="name">course.search</field>
-            <field name="model">abc.course</field>
+            <field name="model">abc</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -45,7 +45,7 @@
         <!-- override the automatically generated list view for courses -->
         <record model="ir.ui.view" id="course_tree_view">
             <field name="name">course.tree</field>
-            <field name="model">abc.course</field>
+            <field name="model">abc</field>
             <field name="arch" type="xml">
                 <tree string="Course Tree">
                     <field name="name"/>
@@ -62,7 +62,7 @@
         -->
         <record model="ir.actions.act_window" id="course_list_action">
             <field name="name">Courses</field>
-            <field name="res_model">abc.course</field>
+            <field name="res_model">abc</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -83,7 +83,7 @@
         <menuitem id="courses_menu" name="Courses" parent="openacademy_menu"
                   action="course_list_action"/>
         <!-- Full id location:
-             action="abc.course_list_action"
+             action="abc_list_action"
              It is not required when it is the same module -->
     </data>
 </openerp>

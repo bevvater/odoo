@@ -2,6 +2,12 @@
 
 from openerp import models, fields, api
 
+class Thanh1(models.Model):
+	_name = 'thanh2'
+
+	name = fields.Char(string="Title")
+	description = fields.Text()
+
 # class thanh(models.Model):
 #     _name = 'thanh.thanh'
 

@@ -8,19 +8,19 @@
             <field name="model">thanh2</field>
             <field name="arch" type="xml">
                 <form string="Course Form">
-                    <sheett>
+                    <sheet>
                         <group>
                             <field name="name"/>
                         </group>
-                        <notebook>
-                            <page string="Description">
+                        <notebook123>
+                            <page1 string="Description">
                                 <field name="description"/>
-                            </page>
-                            <page string="About">
+                            </page1>
+                            <page2 string="About">
                                 This is an example of notebooks
-                            </page>
-                        </notebook>
-                    </sheett>
+                            </page2>
+                        </notebook123>
+                    </sheet>
                 </form>
             </field>
         </record>

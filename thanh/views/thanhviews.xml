@@ -12,14 +12,14 @@
                         <group>
                             <field name="name"/>
                         </group>
-                        <notebook123>
-                            <page1 string="Description">
+                        <lol>
+                            <na string="Description">
                                 <field name="description"/>
-                            </page1>
-                            <page2 string="About">
+                            </na>
+                            <lo string="About">
                                 This is an example of notebooks
-                            </page2>
-                        </notebook123>
+                            </lo>
+                        </lol>
                     </sheet>
                 </form>
             </field>

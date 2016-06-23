@@ -8,7 +8,7 @@
             <field name="model">thanh2</field>
             <field name="arch" type="xml">
                 <form string="Course Form">
-                    <sheet>
+                    <dzz>
                         <group>
                             <field name="name"/>
                         </group>
@@ -20,7 +20,7 @@
                                 This is an example of notebooks
                             </lo>
                         </lol>
-                    </sheet>
+                    </dzz>
                 </form>
             </field>
         </record>
